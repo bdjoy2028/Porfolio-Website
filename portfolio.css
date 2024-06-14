@@ -320,7 +320,7 @@ h4{
 }
 .services-container{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit,50% 50%);
     align-items: center;
     gap: 2.5rem;
     margin-left: 1rem;
@@ -329,7 +329,7 @@ h4{
 }
 .service-box{
     background-color: rgb(8, 8, 8);
-    height: 300px;
+    height: 50vh;
     border-radius: 3rem;
     border: 5px solid transparent;
     border-color: #f904df;
@@ -624,12 +624,37 @@ body{
 .contact-right img{
     width: 500px;
 }
-@media (max-width:800px) {
+@media (max-width:500px) {
     .contact-inputs{
         width:80vw;
     }
     .contact-right{
         display: none;
+    }
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,100%);
+        align-items: center;
+        gap: 2.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+    }
+    .service-box{
+        background-color: rgb(8, 8, 8);
+        height: 70vh;
+        border-radius: 3rem;
+        border: 5px solid transparent;
+        border-color: #f904df;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        font-size: 8pt;
+    }
+    .service-info h4{
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 1;
+        color: whitesmoke;
     }
 }
 
