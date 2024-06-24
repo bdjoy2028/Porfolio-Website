@@ -371,6 +371,11 @@ h4{
     font-family: 'Josefin Sans',  sans-serif;
     box-sizing: border-box;
 }
+
+.resume{
+    background: rgb(8, 8, 8);
+    color: whitesmoke;
+}   
 .about{
     width: 100%;
     padding: 78px 0px;
