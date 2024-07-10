@@ -11,6 +11,14 @@
     background-size: cover;
     background-position-y: 20%;
 }
+.hello{
+    position: absolute;
+    height: auto;
+    top: 60px;
+    left: 20px;
+    width: 75px;
+    border-radius: 25%;
+}
 nav{
     display: flex;
     align-items: center;
@@ -26,7 +34,7 @@ nav{
     cursor: pointer;
 }
 span{
-    color: #f904df;
+    color: teal;
 }
 nav ul li{
     list-style-type: none;
@@ -38,12 +46,12 @@ nav ul li a{
     text-decoration: none;
 }
 nav ul li a:hover, nav ul li a.active{
-    color: #f904df;
+    color: orange;
     transition: .4s; 
-    border-bottom: 3px solid #f904df;
+    border-bottom: 3px solid teal;
 }
 .btn{
-    background-color: #f904df;
+    background-color: teal;
     color: whitesmoke;
     text-decoration: none;
     border: 2px solid transparent;
@@ -85,7 +93,7 @@ h4{
     display: inline-block;
     width: 100%;
     padding: 14px 130px 14px 15px;
-    border: 2px solid #f904df;
+    border: 2px solid teal;
     outline: none;
     border-radius: 30px;
 }
@@ -96,7 +104,7 @@ h4{
     border: none;
     padding: 10px 30px;
     border-radius: 30px;
-    background-color: #f904df;
+    background-color: orange;
     color: whitesmoke;
     cursor: pointer;
     box-shadow: 0px 0px 5px #000, 0px 0px 15px #868686;
@@ -136,7 +144,7 @@ h4{
 }
 .text-animation span::before{
     content: "Web Developer";
-    color: var(#f904df);
+    color: var(orange);
     animation: words 20s infinite;
 }
 .text-animation span::after{
@@ -151,7 +159,7 @@ h4{
 }
 @keyframes cursor{
     to{
-        border-left: 2px solid var(#f904df);
+        border-left: 2px solid var(teal);
     }
 }
 @keyframes words{
@@ -247,7 +255,7 @@ h4{
 .timeline-dot{
     height: 21px;
     width: 21px;
-    background-color: orangered;
+    background-color: orange;
     box-shadow: 0 0 25px whitesmoke,
     0 0 50px black;
     position: absolute;
@@ -258,21 +266,21 @@ h4{
 .timeline-date{
     font-size: 20px;
     font-weight: 800;
-    color: #f904df;
+    color: teal;
     margin: 6px 0 15px;
 }
 .timeline-content{ 
     background-color: black;
-    border: 3px solid #f904df;
+    border: 3px solid orange;
     padding: 30px 50px;
     border-radius: 4rem;
-    box-shadow: 0 0 10px orangered;
+    box-shadow: 0 0 10px orange;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 .timeline-content:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 25px orangered;
+    box-shadow: 0 0 25px teal;
 }
 .timeline-content h3{
     font-size: 20px;
@@ -291,7 +299,7 @@ h4{
     width: 8px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: orangered;
+    background-color: orange;
 }
 ::-webkit-scrollbar-track{
     background-color: rgb(8, 8, 8);
@@ -332,14 +340,14 @@ h4{
     height: 50vh;
     border-radius: 3rem;
     border: 5px solid transparent;
-    border-color: #f904df;
+    border-color: orange;
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
 .service-box:hover{
-    background: orangered;
-    color: #f904df;
-    border: 5px solid #f904df;
+    background: orange;
+    color: teal;
+    border: 5px solid teal;
     transform: scale(1.03);
 }
 .service-box .service-info{
@@ -412,7 +420,7 @@ h4{
     letter-spacing: 2px;
 }
 span{
-    color: #f904df;
+    color: orange;
 }
 .about-text p{
     color: #fcfc;
@@ -422,7 +430,7 @@ span{
     margin-bottom: 45px;
 }
 button{
-    background: #f904df;
+    background: teal;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -433,7 +441,7 @@ button{
 }
 button:hover{
     background: transparent;
-    border: 2px solid #f904df;
+    border: 2px solid orange;
     cursor: pointer; 
 }
 body{
@@ -578,7 +586,7 @@ body{
 }
 .contact-left-title h2{
     font-weight: 600;
-    color: #a363aa;
+    color: teal;
     font-size: 40px;
     margin-bottom: 5px;
 }
@@ -586,7 +594,7 @@ body{
     border: none;
     width: 120px;
     height: 5px;
-    background-color: #a363aa;
+    background-color: orange;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -620,7 +628,7 @@ body{
     gap: 10px;
     border: none;
     border-radius: 50px;
-    background: linear-Gradient(270deg,#ff994f,#fa6d86);
+    background: linear-Gradient(270deg,#ff994f, teal);
     cursor: pointer;
 }
 .contact-left button img{
@@ -629,7 +637,7 @@ body{
 .contact-right img{
     width: 500px;
 }
-@media (max-width:500px) {
+@media screen and (max-width:500px) {
     .contact-inputs{
         width:80vw;
     }
@@ -661,9 +669,44 @@ body{
         line-height: 1;
         color: whitesmoke;
     }
+    .about{
+        width: 100%;
+        padding: 78px 0px;
+        background-color: rgb(8, 8, 8);
+    }
+    .about img {
+        height: auto;
+        width: 420px;
+        border-radius: 25px;
+    }
+    .about-text{
+        width: 450px;
+        margin-left: 25px;
 }
-
-
-
-
-
+.about-text h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.about-text h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+}
