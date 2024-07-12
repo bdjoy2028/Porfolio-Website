@@ -655,4 +655,9 @@ body{
     .heading{
         font-size: 25px;
     }
+    .contact-container{
+        height: 100vh;
+        display: flex;
+        align-items: start;
+        justify-content: space-evenly;
 }
