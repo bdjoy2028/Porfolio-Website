@@ -12,12 +12,13 @@
     background-position-y: 20%;
 }
 .hello{
-    position: absolute;
+    position: auto;
     height: auto;
     top: 60px;
     left: 20px;
     width: 75px;
     border-radius: 25%;
+    display: flex;
 }
 nav{
     display: flex;
@@ -217,10 +218,10 @@ h4{
 }
 .education{
     padding: 100px 15px;
-    background: rgb(8, 8, 8);
 }
 .education h2{
     margin-bottom: 5rem;
+    color: black;
 }
 .timeline-items{
     max-width: 1200px;
@@ -387,7 +388,6 @@ h4{
 .about{
     width: 100%;
     padding: 78px 0px;
-    background-color: rgb(8, 8, 8);
 }
 .about img {
     height: auto;
@@ -407,13 +407,13 @@ h4{
     justify-content: space-around;
 }
 .about-text h1{
-    color: white;
+    color: black;
     font-size: 80px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
 .about-text h5{
-    color: white;
+    color: teal;
     font-size: 25px;
     text-transform: capitalize;
     margin-bottom: 25px;
@@ -423,7 +423,7 @@ span{
     color: orange;
 }
 .about-text p{
-    color: #fcfc;
+    color: black;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 16px;
@@ -634,77 +634,4 @@ body{
 }
 .contact-right img{
     width: 500px;
-}
-@media (max-width:500px) {
-    .contact-inputs{
-        width:80vw;
-    }
-    .contact-right{
-        display: none;
-    }
-    .services-container{
-        display: grid;
-        grid-template-columns: repeat(auto-fit,100%);
-        align-items: center;
-        gap: 2.5rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-bottom: 2rem;
-    }
-    .service-box{
-        background-color: rgb(8, 8, 8);
-        height: 70vh;
-        border-radius: 3rem;
-        border: 5px solid transparent;
-        border-color: #f904df;
-        cursor: pointer;
-        transition: 0.4s ease-in-out;
-        font-size: 8pt;
-    }
-    .service-info h4{
-        font-size: 2rem;
-        font-weight: 800;
-        line-height: 1;
-        color: whitesmoke;
-    }
-    .about{
-        width: 100%;
-        padding: 78px 0px;
-        background-color: rgb(8, 8, 8);
-    }
-    .about img {
-        height: auto;
-        width: 420px;
-        border-radius: 25px;
-    }
-    .about-text{
-        width: 450px;
-        margin-left: 25px;
-}
-.about-text h1{
-    color: white;
-    font-size: 80px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-}
-.about-text h5{
-    color: white;
-    font-size: 25px;
-    text-transform: capitalize;
-    margin-bottom: 25px;
-    letter-spacing: 2px;
-}
-.about-text h1{
-    color: white;
-    font-size: 80px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-}
-.about-text h5{
-    color: white;
-    font-size: 25px;
-    text-transform: capitalize;
-    margin-bottom: 25px;
-    letter-spacing: 2px;
-}
 }
