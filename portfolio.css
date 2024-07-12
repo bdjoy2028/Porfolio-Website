@@ -4,6 +4,9 @@
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
 }
+.wrapper{
+    width: 100%;
+}
 .hero{
     height: 100vh;
     width: 100%;
@@ -329,7 +332,7 @@ h4{
 }
 .services-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,50% 50%);
+    grid-template-columns: repeat(auto-fit,45% 45%);
     align-items: center;
     gap: 2.5rem;
     margin-left: 1rem;
@@ -572,7 +575,7 @@ body{
     }
 }
 .contact-container{
-    height: 100vh;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -582,6 +585,7 @@ body{
     flex-direction: column;
     align-items: start;
     gap: 20px;
+    width: 500px;
 }
 .contact-left-title h2{
     font-weight: 600;
@@ -636,15 +640,23 @@ body{
 .contact-right img{
     width: 500px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 430px) {
     .service-info h4{
         font-size: 1rem;
         text-align: left;
-        position: relative;
-
+        position:relative;
+        right: 50px;
+    }
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,40% 40%);
+    }
+    .button{
+        padding: 35px;
     }
     .logo{
         font-size: 25px;
+        padding-bottom: 15px;
     }
     h1{
         font-size: 40px;
@@ -667,7 +679,7 @@ body{
     .contact-left{
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
         gap: 20px;
     }
     .contact-left-title h2{
@@ -729,32 +741,35 @@ body{
         justify-content: space-around;
     }
     .about img {
-        height: auto;
-        width: 420px;
-        border-radius: 25px;
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
     .about-text{
         width: 450px;
         margin-left: 25px;
         display: flex;
         flex-direction: column;
+        float: bottom;
+    }
+    .skill{
+        width: 400px;
     }
     .hero{
         height: 100vh;
-        width:max-content;
+        width:100%;
         background-image: url(Img/679981D2-000B-4C0A-ACFD-99681BA987E9.jpeg);
         background-size: cover;
         background-position-y: 20%;
     }
     nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 45px;
-        padding-left: 8%;
-        padding-right: 8%;
-        flex-direction:column-reverse;
+        display: block;
+        float: right;
+    }
+    @media screen and (min-width: 820px) {
+        .services-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,45% 45%);
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
