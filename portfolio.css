@@ -354,17 +354,18 @@ h4{
 .service-box .service-info{
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     max-height: 200px;
-    justify-content: left;
+    justify-content: center;
     align-items: baseline;
     padding: 5rem 5rem;
 }
 .service-info h4{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 1;
     color: whitesmoke;
+    text-align: center;
 }
 .service-info p{
     font-size: 1.6rem;
@@ -634,4 +635,24 @@ body{
 }
 .contact-right img{
     width: 500px;
+}
+@media screen and (max-width: 600px) {
+    .service-info h4{
+        font-size: 1rem;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    .education h2{
+        font-size: 25px;
+    }
+    .heading{
+        font-size: 25px;
+    }
 }
